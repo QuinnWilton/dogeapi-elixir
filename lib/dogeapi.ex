@@ -6,8 +6,8 @@ defmodule DogeAPI do
 	end
 
 	def process_response_body(body) do
-		to_string(body)
-			|> JSEX.decode
+		{ :ok, json } = to_string(body) |> JSEX.decode
+		json
 	end
 
 	def get_balance(api_key) do
