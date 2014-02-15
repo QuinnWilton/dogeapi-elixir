@@ -20,7 +20,8 @@ defmodule Dogeapi.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      { :httpotion, github: "myfreeweb/httpotion" }
+      { :httpotion, github: "myfreeweb/httpotion" },
+      { :jsonex, github: "marcelog/jsonex" }
     ]
   end
 end

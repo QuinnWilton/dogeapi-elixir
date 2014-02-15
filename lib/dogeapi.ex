@@ -5,6 +5,11 @@ defmodule DogeAPI do
 		"https://www.dogeapi.com/wow/?" <> url
 	end
 
+	def process_response_body(body) do
+		to_string(body)
+			|> Jsonex.decode
+	end
+
 	def get_balance(api_key) do
 		params = [api_key: api_key]
 		construct_url("get_balance", params)
