@@ -21,7 +21,7 @@ defmodule Dogeapi.Mixfile do
   defp deps do
     [
       { :httpotion, github: "myfreeweb/httpotion" },
-      { :jsonex, github: "marcelog/jsonex" }
+      { :jsex, github: "talentdeficit/jsex" }
     ]
   end
 end

@@ -7,7 +7,7 @@ defmodule DogeAPI do
 
 	def process_response_body(body) do
 		to_string(body)
-			|> Jsonex.decode
+			|> JSEX.decode
 	end
 
 	def get_balance(api_key) do
